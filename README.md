@@ -1,5 +1,11 @@
 # BlackCMS/Packages
 
+<p align="center">
+    <a href="https://img.shields.io/github/license/blackcms/packages"><img src="https://img.shields.io/github/license/blackcms/packages"></a>
+    <a href="https://img.shields.io/github/forks/blackcms/packages"><img src="https://img.shields.io/github/forks/blackcms/packages"></a>
+    <a href="https://img.shields.io/github/issues/blackcms/packages"><img src="https://img.shields.io/github/issues/blackcms/packages"></a>
+</p>
+
 These are the main **Packages** of **BlackCMS**.
 
 It includes the main packages for management of system.
