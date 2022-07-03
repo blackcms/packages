@@ -1,0 +1,57 @@
+<?php
+
+namespace BlackCMS\Menu\Models;
+
+use BlackCMS\Base\Enums\BaseStatusEnum;
+use BlackCMS\Base\Models\BaseModel;
+use BlackCMS\Base\Traits\EnumCastable;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
+class Menu extends BaseModel
+{
+    use EnumCastable;
+
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = "menus";
+
+    /**
+     * @var array
+     */
+    protected $fillable = ["name", "slug", "status"];
+
+    /**
+     * @var array
+     */
+    protected $casts = [
+        "status" => BaseStatusEnum::class,
+    ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function (Menu $menu) {
+            MenuNode::where("menu_id", $menu->id)->delete();
+        });
+    }
+
+    /**
+     * @return HasMany
+     */
+    public function menuNodes(): HasMany
+    {
+        return $this->hasMany(MenuNode::class, "menu_id");
+    }
+
+    /**
+     * @return HasMany
+     */
+    public function locations(): HasMany
+    {
+        return $this->hasMany(MenuLocation::class, "menu_id");
+    }
+}
