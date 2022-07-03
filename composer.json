@@ -1,6 +1,6 @@
 {
     "name": "blackcms/packages",
-    "description": "The BlackCMS Main Packages Composer Package",
+    "description": "Main Packages Composer Package",
     "version": "1.0.0",
     "homepage": "https://github.com/blackcms/packages",
     "keywords": [
