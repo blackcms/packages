@@ -1,6 +1,6 @@
 # BlackCMS/Packages
 
-<p align="center">
+<p>
     <a href="https://img.shields.io/github/license/blackcms/packages"><img src="https://img.shields.io/github/license/blackcms/packages"></a>
     <a href="https://img.shields.io/github/forks/blackcms/packages"><img src="https://img.shields.io/github/forks/blackcms/packages"></a>
     <a href="https://img.shields.io/github/issues/blackcms/packages"><img src="https://img.shields.io/github/issues/blackcms/packages"></a>
