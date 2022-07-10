@@ -30,13 +30,11 @@
                     @endforeach
                 </div>
             </div>
-            <div class="theme-option-sticky">
-                <div class="info_bar">
-                    <div class="theme-option-action_bar">
-                        {!! apply_filters(THEME_OPTIONS_ACTION_META_BOXES, null, THEME_OPTIONS_MODULE_NAME) !!}
-                        <button type="submit" class="btn btn-primary button-save-theme-options">{{ trans('packages/theme::theme.save_changes') }}</button>
-                    </div>
-                </div>
+            <div class="theme-option-action_bar">
+                {!! apply_filters(THEME_OPTIONS_ACTION_META_BOXES, null, THEME_OPTIONS_MODULE_NAME) !!}
+                <button type="submit" class="m-3 btn btn-primary button-save-theme-options">
+                    <i class="las la-check la-2x"></i> {{ trans('packages/theme::theme.save_changes') }}
+                </button>
             </div>
         {!! Form::close() !!}
     </div>
