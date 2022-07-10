@@ -1,11 +1,15 @@
 ## Installation passaport
 
-`php artisan passport:install`
+```sh
+php artisan passport:install
+```
 
 ## Generate API Docs
 
-`php artisan scribe:generate`
+```sh
+php artisan scribe:generate
+```
 
-## Available API
+## Docs API
 
 See the list in `http://your-domain.com/docs`

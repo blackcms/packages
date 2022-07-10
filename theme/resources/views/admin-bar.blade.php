@@ -1,16 +1,5 @@
 <nav id="admin_bar">
     <div class="admin-bar bg-primary">
-        {{-- <div class="admin-bar-logo">
-            <a href="{{ route('dashboard.index') }}" title="{{ trans('packages/theme::theme.go_to_dashboard') }}">
-                <img src="{{ setting('admin_logo') ? MediaManagement::getImageUrl(setting('admin_logo')) : url(config('core.base.general.logo')) }}" alt="logo"/>
-            </a>
-        </div> --}}
-         {{-- <div class="admin-bar-logo">
-            <a href="{{ route('dashboard.index') }}" title="{{ trans('packages/theme::theme.go_to_dashboard') }}">
-                BlackCMS
-                <img src="{{ setting('admin_logo') ? MediaManagement::getImageUrl(setting('admin_logo')) : url(config('core.base.general.logo')) }}" alt="logo"/>
-            </a>
-        </div> --}}
         <ul class="admin-navbar-nav">
             @foreach (admin_bar()->getGroups() as $slug => $group)
                 @if (Arr::get($group, 'items'))

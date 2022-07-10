@@ -15,7 +15,6 @@ It includes the main packages for management of system.
 
 You can install this package using [composer](https://getcomposer.org).
 
-
 ```sh
 composer require blackcms/packages
 ```
